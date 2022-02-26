@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+      xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Acceso Denegado</title>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <div>Acceso denegado. 
+            NO tienes permisos para ver está página o ejecutar está acción
+            <br/><br/>
+            <a th:href="@{/}">[[#{accion.regresar}]]</a>
+        </div>        
+    </body>
+</html>
+

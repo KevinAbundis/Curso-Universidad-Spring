@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+      xmlns="http://www.w3.org/1999/xhtml">
+    <head th:replace="layout/plantilla :: head">
+        <title>Login</title>
+    </head>
+    <body>
+        <header th:replace="layout/plantilla :: header"></header>
+
+        <section id="actions" class="py-4 mb-4 bg-light">
+            <div class="container-fluid"> 
+                <div class="row">
+                    <!-- se pueden agregar botones -->
+                </div>
+            </div>
+        </section>
+
+        <section id="login">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mx-auto">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <h4>Login</h4>
+                            </div>
+                            <div class="card-body">
+                                <form method="POST" th:action="@{/login}">
+                                    <div class="form-group">
+                                        <label for="username">[[#{login.usuario}]]:</label>
+                                        <input class="form-control" type="text" name="username" id="username"/>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="password">[[#{login.contrasenia}]]:</label>
+                                        <input class="form-control" type="password" name="password" id="password"/>
+                                    </div> 
+
+                                    <div class="d-grid gap-2 mt-3">
+                                        <input type="submit" th:value="#{login.iniciar-sesion}" class="btn btn-primary"/>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="date" class="card-footer text-muted text-center">
+                                <script>
+                                    const d = new Date();
+                                    document.getElementById("date").innerHTML = d.toDateString();
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer th:replace="layout/plantilla :: footer"></footer> 
+
+    </body>
+</html>
+
