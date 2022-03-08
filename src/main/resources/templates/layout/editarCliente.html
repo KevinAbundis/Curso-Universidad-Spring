@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <head>
+        <title>Editar Cliente</title>
+        <meta charset="UTF-8"/>       
+    </head>
+    <body>
+        <section th:fragment="editarCliente">
+            <form th:action="@{/guardar}" th:object="${persona}"
+                  method="POST" class="was-validated">
+                      <input type="hidden" name="idPersona" th:field="*{idPersona}"/>
+                      <section th:replace="layout/botonesEditar :: botonesEditar"></section>
+            </form>
+        </section>
+    </body>
+</html>
