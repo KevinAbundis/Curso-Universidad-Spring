@@ -33,3 +33,13 @@
 ![](images/Apache-Netbeans-1.png)
 
 ![](images/Apache-Netbeans-2.png)
+
+**Diagrama ER - MySQL Workbench**
+
+![](images/EER%20Diagram%20-%20test.png)
+
+**Tabla persona - MySQL Workbench**
+
+**Tabla usuario - MySQL Workbench**
+
+**Tabla rol - MySQL Workbench**
