@@ -40,6 +40,12 @@
 
 **Tabla persona - MySQL Workbench**
 
+![](images/test%20-%20table%20persona.png)
+
 **Tabla usuario - MySQL Workbench**
 
+![](images/test%20-%20table%20usuario.png)
+
 **Tabla rol - MySQL Workbench**
+
+![](images/test%20-%20table%20rol.png)
